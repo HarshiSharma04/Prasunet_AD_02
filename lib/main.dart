@@ -5,7 +5,8 @@ import 'categories_page.dart';
 import 'completed_tasks_page.dart';
 import 'home_page.dart';
 import 'splash_screen.dart';
-import 'calendar_page.dart'; // Import your calendar page
+import 'calendar_page.dart';
+import 'add_task_for_date_page.dart';// Import your calendar page
 
 void main() {
   runApp(MyApp());
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/categories': (context) => CategoriesPage(),
         '/settings': (context) => SettingsPage(),
         '/calendar': (context) => CalendarPage(),
+
       },
     );
   }
