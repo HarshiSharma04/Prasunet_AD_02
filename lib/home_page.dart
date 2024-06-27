@@ -32,6 +32,9 @@ class _HomePageState extends State<HomePage> {
   void _navigateToSettings() {
     Navigator.of(context).pushNamed('/settings');
   }
+  void _navigateToCalendar(){
+    Navigator.of(context).pushNamed('/calendar');
+  }
 
   void _removeTask(int index) {
     setState(() {
@@ -105,9 +108,10 @@ class _HomePageState extends State<HomePage> {
                   _navigateToCategories(); // Navigate to Categories
                   break;
                 case 2:
-                  _navigateToSettings(); // Navigate to Settings
+                  _navigateToCalendar(); // Navigate to Settings
                   break;
                 case 3:
+                  _navigateToSettings();
                 // Navigate to Calendar (add your navigation logic)
                   break;
               }
